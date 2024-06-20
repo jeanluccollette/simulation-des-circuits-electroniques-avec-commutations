@@ -2,6 +2,8 @@
 
 ## Problématique
 
+Dans de nombreuses applications en électronique, notamment en électronique de puissance, des composants passifs (inductances, condensateurs, etc.) cohabitent avec d'autres composants (transistors, thyristors, etc.) qui ont des temps de commutation très petits par rapport aux constantes de temps associées aux composants passifs.
+
 ## Exemples
 
 ### Oscillateur avec amplificateur opérationnel

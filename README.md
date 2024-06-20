@@ -8,10 +8,16 @@
 
 ![](Data/Diapositive1.PNG)
 
-![](Data/oscillateur_1.PNG)
+![](Data/oscillateur_1.png)
 
-![](Data/oscillateur_1.PNG)
+![](Data/oscillateur_2.png)
 
 ### Convertisseur résonnant DC/DC
 
 ![](Data/Diapositive2.PNG)
+
+![](Data/convres_1.png)
+
+![](Data/convres_2.png)
+
+![](Data/convres_3.png)

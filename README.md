@@ -2,7 +2,9 @@
 
 ## Problématique
 
-Dans de nombreuses applications en électronique, notamment en électronique de puissance, des composants passifs (inductances, condensateurs, etc.) cohabitent avec d'autres composants (transistors, thyristors, etc.) qui ont des temps de commutation très petits par rapport aux constantes de temps associées aux composants passifs.
+Dans de nombreuses applications en électronique, notamment en électronique de puissance, des composants passifs (inductances, condensateurs, etc.) cohabitent avec d'autres composants (transistors, thyristors, diodes, etc.) qui ont des temps de commutation très petits par rapport aux constantes de temps associées aux composants passifs.
+
+On rencontre alors des difficultés à mettre en oeuvre des méthodes de résolution numérique sur les équations d'état qui modélisent ce type de circuit.
 
 ## Exemples
 

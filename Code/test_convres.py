@@ -29,20 +29,16 @@ r1 = 0.02
 fh = 40000
 t_start = 0.0
 t_final = 1e-3
+t_deb = 5e-4
+t_fin = 5.5e-4
 delta_t = 1e-7
 x0 = [0, 0, 0]
 
 sol = solve_ivp(lambda t, x: ode_convres(t, x, c, l1, L, R, r1, fh), [
-                0, t_final], x0, rtol=1e-10, atol=1e-10)
+                t_start, t_final], x0, rtol=1e-10, atol=1e-10)
 t = sol.t.T
 x = sol.y.T
-plt.figure()
-plt.semilogy(t[0:-1], np.diff(t), 'o-', lw=0.5, ms=1)
-plt.grid('on')
-plt.title('Pas de temps')
-plt.xlabel('temps (en s)')
-plt.ylabel('h_n')
-
+ind_extr = np.where(np.logical_and(t >= t_deb, t <= t_fin))[0]
 ve = x[:, 0]
 i_1 = x[:, 1]
 i_s = x[:, 2]
@@ -54,16 +50,47 @@ courants[:, 0] = np.sign(np.sin(2*np.pi*fh*t))
 courants[:, 1] = i_1
 courants[:, 2] = i_s
 courants[:, 3] = i_1-i_s*np.sign(ve)
+
+plt.figure()
+plt.semilogy(t[0:-1], np.diff(t), 'o-', lw=0.5, ms=1)
+plt.grid('on')
+plt.title('Pas de temps')
+plt.xlabel('temps (en s)')
+plt.ylabel('h_n')
+
 plt.figure()
 pt = plt.plot(t, tensions, lw=0.5)
 plt.grid('on')
 plt.title('Tensions (en V)')
 plt.xlabel('temps (en s)')
 plt.legend(pt, ['v_e', 'R*i_s'])
+
 plt.figure()
 pt = plt.plot(t, courants, lw=0.5)
 plt.grid('on')
 plt.title('Courants (en A)')
 plt.xlabel('temps (en s)')
 plt.legend(pt, ['signal de commande', 'i_1', 'i_s', 'i_c'])
+
+plt.figure()
+plt.semilogy(t[ind_extr[0:-1]], np.diff(t[ind_extr]), 'o-', lw=0.5, ms=1)
+plt.grid('on')
+plt.title('Pas de temps')
+plt.xlabel('temps (en s)')
+plt.ylabel('h_n')
+
+plt.figure()
+pt = plt.plot(t[ind_extr], tensions[ind_extr, :])
+plt.grid('on')
+plt.title('Tensions (en V)')
+plt.xlabel('temps (en s)')
+plt.legend(pt, ['v_e', 'R*i_s'])
+
+plt.figure()
+pt = plt.plot(t[ind_extr], courants[ind_extr, :])
+plt.grid('on')
+plt.title('Courants (en A)')
+plt.xlabel('temps (en s)')
+plt.legend(pt, ['signal de commande', 'i_1', 'i_s', 'i_c'])
+
 plt.show()

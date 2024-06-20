@@ -12,9 +12,17 @@ L'idée ici est d'illustrer ces difficultés sur deux exemples pour lesquels on 
 
 ### Oscillateur avec amplificateur opérationnel
 
-Le schéma de cet oscillateur fait apparaître deux variables d'état $V$ et $\epsilon$ qui sont les tensions aux bornes des condensateurs.
+Le schéma de cet oscillateur fait apparaître deux variables d'état $V$ et $\epsilon$ qui sont les tensions aux bornes des condensateurs. Le second est une capacité parasite sur les entrées de l'amplificateur opérationnel, donc très faible.
 
 ![](Data/Diapositive1.PNG)
+
+Le programme [test_oscillateur.py](Code/test_oscillateur.py) génère les courbes présentées ci-dessous.
+
+```python
+python test_oscillateur.py
+```
+
+Au moment des commutations, le pas de calcul diminue fortement
 
 ![](Data/oscillateur_1.png)
 

@@ -6,4 +6,8 @@
 
 ### Oscillateur avec amplificateur opérationnel
 
+![](Data/Diapositive1.PNG)
+
 ### Convertisseur résonnant DC/DC
+
+![](Data/Diapositive2.PNG)

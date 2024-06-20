@@ -41,3 +41,9 @@ Aux instants où surviennent ces commutations instantanées, le pas de calcul de
 ![](Data/convres_2.png)
 
 ![](Data/convres_3.png)
+
+![](Data/convres_4.png)
+
+![](Data/convres_5.png)
+
+![](Data/convres_6.png)

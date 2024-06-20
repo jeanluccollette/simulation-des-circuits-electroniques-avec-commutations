@@ -42,8 +42,12 @@ Aux instants où surviennent ces commutations instantanées, le pas de calcul de
 
 ![](Data/convres_3.png)
 
+En se plaçant dans un intervalle de temps où le régime permanent est atteint, on visualise mieux les instants de commutation pour le hacheur qui alimente le montage (piloté par le signal de commande) et le pont de diodes qui redresse la tension du circuit résonnant.
+
 ![](Data/convres_4.png)
 
 ![](Data/convres_5.png)
+
+Accessoirement, on se rend compte que le courant $i_1$ fourni par le hacheur est presque nul aux moments des commutations dans ce hacheur, ce qui peut réduire significativement les pertes par commutation des composants.
 
 ![](Data/convres_6.png)

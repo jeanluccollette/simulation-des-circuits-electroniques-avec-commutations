@@ -6,6 +6,8 @@ Dans de nombreuses applications en électronique, notamment en électronique de 
 
 On rencontre alors des difficultés à mettre en oeuvre des méthodes de résolution numérique sur les équations d'état qui modélisent ce type de circuit. Les temps de simulation peuvent alors être très long, notamment si on utilise des méthodes à pas variable, du type [Dormand-Prince](https://en.wikipedia.org/wiki/Dormand%E2%80%93Prince_method), communément utilisées dans les environnements de calcul (Python, Matlab, etc.).
 
+L'idée ici est d'illustrer ces difficultés sur deux exemples pour lesquels on peut exprimer directement les équations d'état. On constatera que le pas de calcul peut devenir très petit aux moments où surviennent les commutations.
+
 ## Exemples
 
 ### Oscillateur avec amplificateur opérationnel

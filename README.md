@@ -30,7 +30,11 @@ Au moment des commutations, le pas de calcul diminue fortement, afin de mainteni
 
 ### Convertisseur DC/DC résonnant
 
+Dans ce schéma, on modélisent les composants en commutation par des interrrupteurs qui commutent instantanément.
+
 ![](Data/Diapositive2.PNG)
+
+Aux instants où surviennent ces commutations instantanées, le pas de calcul descend à sa valeur minimale.
 
 ![](Data/convres_1.png)
 

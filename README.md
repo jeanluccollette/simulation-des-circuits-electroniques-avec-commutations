@@ -10,6 +10,10 @@ L'idée ici est d'illustrer ces difficultés sur deux exemples pour lesquels on 
 
 ## Exemples
 
+### Notebook
+
+Le notebook [Electronique.ipynb](Notebook/Electronique.ipynb) rassemble les programmes présentés ensuite.
+
 ### Oscillateur avec amplificateur opérationnel
 
 Le schéma de cet oscillateur fait apparaître deux variables d'état $V$ et $\epsilon$ qui sont les tensions aux bornes des condensateurs. Le second est une capacité parasite sur les entrées de l'amplificateur opérationnel, donc très faible.

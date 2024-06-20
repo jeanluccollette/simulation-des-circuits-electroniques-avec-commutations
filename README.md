@@ -12,7 +12,7 @@
 
 ![](Data/oscillateur_2.png)
 
-### Convertisseur résonnant DC/DC
+### Convertisseur DC/DC résonnant
 
 ![](Data/Diapositive2.PNG)
 

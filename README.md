@@ -26,7 +26,7 @@ Le programme [test_oscillateur.py](Code/test_oscillateur.py) génère les courbe
 python test_oscillateur.py
 ```
 
-Au moment des commutations, le pas de calcul diminue fortement, afin de maintenir l'erreur de consistance locale sous un certain seuil.
+Au moment des commutations, le pas de calcul diminue fortement, afin de tenter de maintenir l'erreur de consistance locale sous un certain seuil.
 
 ![](Data/oscillateur_1.png)
 

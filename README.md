@@ -34,7 +34,7 @@ Au moment des commutations, le pas de calcul diminue fortement, afin de tenter d
 
 ### Convertisseur DC/DC résonnant
 
-Dans ce schéma, on modélisent les composants en commutation par des interrrupteurs qui commutent instantanément.
+Dans ce schéma, on modélise les composants en commutation par des interrrupteurs qui commutent instantanément.
 
 ![](Data/Diapositive2.PNG)
 

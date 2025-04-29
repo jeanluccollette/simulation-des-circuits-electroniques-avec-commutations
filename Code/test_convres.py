@@ -14,9 +14,9 @@ def ode_convres(t, x, c, l1, L, R, r1, fh):
     ve = x[0]
     i_1 = x[1]
     i_s = x[2]
-    E = 200*np.sign(np.sin(2*np.pi*fh*t))
+    e = 200*np.sign(np.sin(2*np.pi*fh*t))
     xp0 = (1/c)*(i_1-i_s*np.sign(ve))
-    xp1 = (1/l1)*(E-ve-r1*i_1)
+    xp1 = (1/l1)*(e-ve-r1*i_1)
     xp2 = (1/L)*(abs(ve)-R*i_s)
     return np.array([xp0, xp1, xp2])
 
